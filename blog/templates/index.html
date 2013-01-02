@@ -1,0 +1,6 @@
+<h1>Moja Strona </h1>
+{% for entry in blog %}
+    <h3>{{ entry.title }}</h3>
+    {{ entry.text|safe }}<br />
+    {{ entry.date|date:"Y.m.d H:i" }}
+{% endfor  %}
